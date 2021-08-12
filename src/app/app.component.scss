@@ -1,0 +1,31 @@
+.sidenav-container{
+  height: 100%;
+  padding: 20px;
+}
+
+.d-flex{
+  flex-direction: column;
+}
+
+.content{
+  height: 420px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.sidenav-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  padding: 15px;
+  width: 820px;
+  height: 475px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px gray;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
