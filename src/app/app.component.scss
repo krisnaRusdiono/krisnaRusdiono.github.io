@@ -9,7 +9,7 @@
 
 .content{
   height: 420px;
-  overflow: hidden;
+  overflow: auto;
   padding: 10px;
 }
 
@@ -22,10 +22,16 @@
 .box{
   padding: 15px;
   width: 820px;
-  height: 475px;
+  // height: 500px;
   border-radius: 20px;
   box-shadow: 0 2px 4px gray;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+// @media screen and (max-width: 350px){
+//   .content{
+//     height: 440px;
+//   }
+// }

@@ -1,0 +1,15 @@
+.box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.box:hover{
+  opacity: 1;
+}
+
+.row{
+  height: 180px;
+}

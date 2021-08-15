@@ -1,0 +1,11 @@
+<h1 class="text-center"><b>Experiences</b></h1>
+<carousel [showIndicators]="false" class="tetx-center" [isAnimated]="true">
+  <slide *ngFor="let data of datasrc">
+    <!-- <img [src]="data.img" [alt]="data.img" class="img-fluid"> -->
+    <div class="sampleimg rounded" style="background-image: url('{{data.img}}');"></div>
+    <div class="carousel-caption text-white caption">
+      <h2 class="m-0">{{data.title}}</h2>
+      <p>{{data.caption}}</p>
+    </div>
+  </slide>
+</carousel>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouteConfigService } from './route-config.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(
+    public routeConfigService: RouteConfigService
+  ) {}
+
   title = 'profileApp';
+
 }

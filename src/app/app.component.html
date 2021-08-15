@@ -1,14 +1,13 @@
-<mat-sidenav-container class="sidenav-container" style="background-image: url('assets/image/spark.gif')">
-  <mat-sidenav-content class="sidenav-content" >
+<mat-sidenav-container class="sidenav-container" style="background-image: url('assets/image/spark.gif')" autosize>
+  <mat-sidenav-content class="sidenav-content">
     <div class="box" style="background-image: url('assets/image/paper-texture.jpg')">
       <div class="d-flex">
         <div class="content">
           <router-outlet></router-outlet>
         </div>
         <div class="navigation">
-          <mat-icon class="float-left" [style.cursor]="'pointer'">navigate_before</mat-icon>
-          <mat-icon class="float-right" [style.cursor]="'pointer'">navigate_next</mat-icon>
-
+          <mat-icon class="float-left" [style.cursor]="'pointer'" (click)="routeConfigService.prev()">navigate_before</mat-icon>
+          <mat-icon class="float-right" [style.cursor]="'pointer'" (click)="routeConfigService.next()">navigate_next</mat-icon>
         </div>
       </div>
     </div>
